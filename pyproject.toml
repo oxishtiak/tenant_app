@@ -1,0 +1,21 @@
+[project]
+name = "tenantapp"
+version = "0.1.0"
+description = "Multi-tenant wallet / ledger API (Django + DRF)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.1,<6.0",
+    "djangorestframework>=3.15",
+    "psycopg[binary]>=3.1",
+]
+
+[dependency-groups]
+dev = []
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
